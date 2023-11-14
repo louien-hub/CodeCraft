@@ -1,12 +1,64 @@
-.icons {
-    margin: 0 40px 0 40px;
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    flex: 1;
+    text-align: center;
 }
 
 .navbar {
-    margin: 10px;
+    margin: 15px;
     border-radius: 10px;
 }
 
-.icons {
+.icon {
     width: 40px;
 }
+
+/* Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.icon:hover {
+    animation: rotate 0.5s ease-in-out;
+    cursor: pointer;
+}
+/* Animation */
+
+/* full-page */
+
+.all-logos {
+    margin: 10px 0 0 0;
+}
+
+.logos {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    gap: 30px;
+}
+
+.logos svg {
+    width: 70px;
+}
+/* full-page */
