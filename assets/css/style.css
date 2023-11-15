@@ -45,6 +45,7 @@
 /* full-page */
 
 .all-logos {
+    position: relative;
     margin: 10px 0 0 0;
 }
 
