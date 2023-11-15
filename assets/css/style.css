@@ -1,20 +1,16 @@
-.navbar {
+.bottom-nav {
     display: flex;
     justify-content: center;
 }
 
-.navbar-brand {
+.bottom-nav .navbar-brand {
     flex: 1;
     text-align: center;
 }
 
-.navbar {
+.bottom-nav {
     margin: 15px;
     border-radius: 10px;
-}
-
-.icon {
-    width: 40px;
 }
 
 /* Animation */
@@ -44,7 +40,7 @@
 
 /* full-page */
 
-.all-logos {
+.m-t {
     position: relative;
     margin: 10px 0 0 0;
 }
