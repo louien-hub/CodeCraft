@@ -51,31 +51,48 @@
 
 .logos {
     display: flex;
-    position: relative;
     justify-content: center;
+    /* position: relative; */
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -30%);
-    gap: 30px;
+    transform: translate(0%, -30%);
+    gap: 20px;
 }
 
 .logos svg {
     width: 70px;
 }
 
+.home-content {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -90%);
+    gap: 20px;
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -300%);
+    gap: 20px;
+}
+
+.img-cert {
+    width: 150px;
+}
+
+
 .a-button {
     text-decoration: none;
 }
 
-.start-premium {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -120%);
-    gap: 10px;
-}
+
 /* full-page */
 
 /* Courses */
