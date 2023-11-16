@@ -62,6 +62,20 @@
 .logos svg {
     width: 70px;
 }
+
+.a-button {
+    text-decoration: none;
+}
+
+.start-premium {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -120%);
+    gap: 10px;
+}
 /* full-page */
 
 /* Courses */
