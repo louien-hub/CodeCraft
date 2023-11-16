@@ -21,11 +21,11 @@
 
 <nav class="navbar fixed-bottom bg-body-tertiary bottom-nav">
     <div class="container d-flex justify-content-center navbar-item">
-        <a class="container-fluid navbar-brand" href="#">
+        <a class="container-fluid navbar-brand" href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12 16.688q.142 0 .276-.043q.134-.043.247-.14q.606-.56 1.148-1.088q.542-.527.954-1.033q.412-.506.66-.983q.25-.478.25-.928q0-.834-.57-1.385q-.57-.55-1.367-.55q-.494 0-.897.205t-.701.515q-.26-.31-.678-.515q-.418-.205-.875-.205q-.8 0-1.372.548q-.571.548-.571 1.38q0 .453.238.937q.239.484.651.985q.413.502.952 1.031q.539.53 1.134 1.077q.111.106.245.15q.134.042.276.042ZM6.615 20q-.666 0-1.14-.475Q5 19.051 5 18.385v-7.53l-1.538 1.199q-.177.134-.366.104q-.188-.031-.323-.208t-.11-.365q.024-.189.195-.323l8.148-6.26q.224-.162.478-.242q.254-.081.519-.081q.264 0 .51.08q.246.081.462.243l8.173 6.26q.171.134.192.323q.022.188-.113.369q-.135.167-.323.198q-.189.03-.36-.104L19 10.856v7.529q0 .666-.475 1.14q-.474.475-1.14.475H6.615Z"/></svg>
         </a>
       
-        <a class="navbar-brand" id="animatedIcon" href="#">
+        <a class="navbar-brand" id="animatedIcon" href="#courses">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1zm4 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM5 8h4m0 8h4"/><path d="m13.803 4.56l2.184-.53c.562-.135 1.133.19 1.282.732l3.695 13.418a1.02 1.02 0 0 1-.634 1.219l-.133.041l-2.184.53c-.562.135-1.133-.19-1.282-.732L13.036 5.82a1.02 1.02 0 0 1 .634-1.219l.133-.041zM14 9l4-1m-2 8l3.923-.98"/></g></svg>
         </a>
     </div>
@@ -39,10 +39,10 @@
 <!-- all-pages -->
 <div class="all-pages" id="all-pages">
     <!-- Home-->
-    <div id="home">
-        <section class="home" id="home">
+    <main id="home" style="display: block;">
+        <section>
         <div class="container m-t">
-            <div class="card">
+            <div class="card sticky-top">
                 <div class="card-body text-center bg-body-tertiary">
                     <h5 class="card-title">Learn Programming</h5>
                 </div>
@@ -54,15 +54,63 @@
             </div>
         </div>
         </section>
-    </div>
+    </main>
     <!-- Home end-->
-    <div id="courses">
-        <section class="courses" id="courses">
-        <div class="container">
-                
+
+    <!-- courses -->
+    <main id="courses" style="display: none;">
+        <section>
+        <div class="container courses m-t">
+            <div class="card">
+                <div class="card-body text-center bg-body-tertiary">
+                    <h5 class="card-title">Learn Programming</h5>
+                </div>
+            </div>
+            <div class="m-t">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+            </div><br>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+            </div><br>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+            </div><br>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+            </div>
+            </div>
         </div>
         </section>
-    </div>
+    </main>
+    <!-- courses end -->
 </div>
 <!-- all-pages -->
 

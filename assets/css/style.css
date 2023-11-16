@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 .bottom-nav {
     display: flex;
     justify-content: center;
@@ -42,7 +46,7 @@
 
 .m-t {
     position: relative;
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .logos {
@@ -59,3 +63,10 @@
     width: 70px;
 }
 /* full-page */
+
+/* Courses */
+.courses {
+    position: relative;
+    margin-bottom: 95px;
+}
+/* Courses */
