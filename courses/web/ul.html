@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../../assets/css/courses.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar fixed-top sticky-top bg-body-tertiary top-nav">
+    <div class="container d-flex justify-content-center navbar-item">
+        <a class="container-fluid navbar-brand" href="javascript:void(0);" onclick="window.history.back();">
+            <svg class="icon" id="btnSwitch" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#179cf0" fill-rule="evenodd" d="m13.087 21.388l.542-.916c.42-.71.63-1.066.968-1.262c.338-.197.763-.204 1.613-.219c1.256-.021 2.043-.098 2.703-.372a5 5 0 0 0 2.706-2.706C22 14.995 22 13.83 22 11.5v-1c0-3.273 0-4.91-.737-6.112a5 5 0 0 0-1.65-1.651C18.41 2 16.773 2 13.5 2h-3c-3.273 0-4.91 0-6.112.737a5 5 0 0 0-1.651 1.65C2 5.59 2 7.228 2 10.5v1c0 2.33 0 3.495.38 4.413a5 5 0 0 0 2.707 2.706c.66.274 1.447.35 2.703.372c.85.015 1.275.022 1.613.219c.337.196.548.551.968 1.262l.542.916c.483.816 1.69.816 2.174 0ZM14.97 7.299a.75.75 0 0 1 1.06 0l.209.209c.635.635 1.165 1.165 1.529 1.642c.384.503.654 1.035.654 1.68c0 .644-.27 1.176-.654 1.68c-.364.476-.894 1.006-1.53 1.642l-.208.208a.75.75 0 1 1-1.06-1.06l.171-.172c.682-.682 1.139-1.141 1.434-1.528c.283-.37.347-.586.347-.77c0-.185-.064-.4-.347-.77c-.295-.388-.752-.847-1.434-1.529l-.171-.171a.75.75 0 0 1 0-1.06Zm-.952-1.105a.75.75 0 1 0-1.449-.388l-2.588 9.66a.75.75 0 1 0 1.45.387l2.587-9.659ZM9.03 7.3a.75.75 0 0 1 0 1.06l-.171.172c-.682.682-1.139 1.141-1.434 1.529c-.283.37-.347.585-.347.77c0 .184.064.4.347.77c.295.387.752.846 1.434 1.528l.171.171a.75.75 0 1 1-1.06 1.06l-.172-.17l-.037-.037c-.635-.636-1.165-1.165-1.529-1.643c-.384-.503-.654-1.035-.654-1.68c0-.644.27-1.176.654-1.68c.364-.476.894-1.006 1.53-1.641l.036-.037l.172-.172a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"/></svg>
+            CodeCraft
+        </a>
+    </div>
+</nav>
+<!-- navbar end -->
+
+<!-- Courses -->
+<div class="container">
+<div class="courses">
+
+<h1>HTML Lists</h1>
+
+<section>
+    <h2>Unordered Lists</h2>
+    <p>An unordered list is a list of items where the order of the items does not matter. In HTML, unordered lists
+        are created using the <code>&lt;ul&gt;</code> (unordered list) element, and each list item is defined with
+        the <code>&lt;li&gt;</code> (list item) element.</p>
+
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <h3>Example:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Unordered List Example&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;My Favorite Fruits&lt;/h1&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;Apple&lt;/li&gt;
+        &lt;li&gt;Banana&lt;/li&gt;
+        &lt;li&gt;Orange&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h2>Ordered Lists</h2>
+    <p>An ordered list is a list of items where the order of the items does matter. In HTML, ordered lists are created
+        using the <code>&lt;ol&gt;</code> (ordered list) element, and each list item is defined with the
+        <code>&lt;li&gt;</code> (list item) element.</p>
+
+    <pre>
+&lt;ol&gt;
+    &lt;li&gt;First Item&lt;/li&gt;
+    &lt;li&gt;Second Item&lt;/li&gt;
+    &lt;li&gt;Third Item&lt;/li&gt;
+&lt;/ol&gt;
+    </pre>
+
+    <h3>Example:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Ordered List Example&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Steps to Make a Sandwich&lt;/h1&gt;
+
+    &lt;ol&gt;
+        &lt;li&gt;Gather ingredients&lt;/li&gt;
+        &lt;li&gt;Spread condiments on bread&lt;/li&gt;
+        &lt;li&gt;Layer with desired fillings&lt;/li&gt;
+        &lt;li&gt;Top with another slice of bread&lt;/li&gt;
+        &lt;li&gt;Cut and serve&lt;/li&gt;
+    &lt;/ol&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h2>Nesting Lists</h2>
+    <p>You can also nest lists within other lists to create a hierarchical structure. For example, you can have an
+        ordered list inside an unordered list or vice versa.</p>
+
+    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2
+        &lt;ol&gt;
+            &lt;li&gt;Subitem 2.1&lt;/li&gt;
+            &lt;li&gt;Subitem 2.2&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
+
+    <h3>Example:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Nested List Example&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Continents and Countries&lt;/h1&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;North America
+            &lt;ul&gt;
+                &lt;li&gt;United States&lt;/li&gt;
+                &lt;li&gt;Canada&lt;/li&gt;
+                &lt;li&gt;Mexico&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Europe
+            &lt;ul&gt;
+                &lt;li&gt;Germany&lt;/li&gt;
+                &lt;li&gt;France&lt;/li&gt;
+                &lt;li&gt;United Kingdom&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Asia
+            &lt;ul&gt;
+                &lt;li&gt;China&lt;/li&gt;
+                &lt;li&gt;India&lt;/li&gt;
+                &lt;li&gt;Japan&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </pre>
+</section>
+
+<section>
+    <h2>Summary</h2>
+    <p>
+        In summary, HTML provides two types of lists: unordered lists (<code>&lt;ul&gt;</code>) for items with no
+        specific order and ordered lists (<code>&lt;ol&gt;</code>) for items with a specific order. You can use the
+        <code>&lt;li&gt;</code> element to define each list item, and lists can be nested to create a structured
+        hierarchy. Lists are commonly used to organize and present information on web pages.
+    </p>
+</section>
+
+
+</div>
+</div>
+<!-- Courses End -->
+
+<!-- partial -->
+<script src="../../assets/js/courses.js"></script>
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

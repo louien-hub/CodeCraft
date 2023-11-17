@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../../assets/css/courses.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar fixed-top sticky-top bg-body-tertiary top-nav">
+    <div class="container d-flex justify-content-center navbar-item">
+        <a class="container-fluid navbar-brand" href="javascript:void(0);" onclick="window.history.back();">
+            <svg class="icon" id="btnSwitch" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#179cf0" fill-rule="evenodd" d="m13.087 21.388l.542-.916c.42-.71.63-1.066.968-1.262c.338-.197.763-.204 1.613-.219c1.256-.021 2.043-.098 2.703-.372a5 5 0 0 0 2.706-2.706C22 14.995 22 13.83 22 11.5v-1c0-3.273 0-4.91-.737-6.112a5 5 0 0 0-1.65-1.651C18.41 2 16.773 2 13.5 2h-3c-3.273 0-4.91 0-6.112.737a5 5 0 0 0-1.651 1.65C2 5.59 2 7.228 2 10.5v1c0 2.33 0 3.495.38 4.413a5 5 0 0 0 2.707 2.706c.66.274 1.447.35 2.703.372c.85.015 1.275.022 1.613.219c.337.196.548.551.968 1.262l.542.916c.483.816 1.69.816 2.174 0ZM14.97 7.299a.75.75 0 0 1 1.06 0l.209.209c.635.635 1.165 1.165 1.529 1.642c.384.503.654 1.035.654 1.68c0 .644-.27 1.176-.654 1.68c-.364.476-.894 1.006-1.53 1.642l-.208.208a.75.75 0 1 1-1.06-1.06l.171-.172c.682-.682 1.139-1.141 1.434-1.528c.283-.37.347-.586.347-.77c0-.185-.064-.4-.347-.77c-.295-.388-.752-.847-1.434-1.529l-.171-.171a.75.75 0 0 1 0-1.06Zm-.952-1.105a.75.75 0 1 0-1.449-.388l-2.588 9.66a.75.75 0 1 0 1.45.387l2.587-9.659ZM9.03 7.3a.75.75 0 0 1 0 1.06l-.171.172c-.682.682-1.139 1.141-1.434 1.529c-.283.37-.347.585-.347.77c0 .184.064.4.347.77c.295.387.752.846 1.434 1.528l.171.171a.75.75 0 1 1-1.06 1.06l-.172-.17l-.037-.037c-.635-.636-1.165-1.165-1.529-1.643c-.384-.503-.654-1.035-.654-1.68c0-.644.27-1.176.654-1.68c.364-.476.894-1.006 1.53-1.641l.036-.037l.172-.172a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"/></svg>
+            CodeCraft
+        </a>
+    </div>
+</nav>
+<!-- navbar end -->
+
+<!-- intro -->
+<div class="container">
+<div class="courses">
+
+    <h1>HTML Navigation (`&lt;nav&gt;`)</h1>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                The <code>&lt;nav&gt;</code> element in HTML is used to define a navigation section on a webpage. It is a
+                semantic HTML5 element that helps in structuring and identifying the navigation area of a site.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Syntax</h2>
+            <pre>
+        &lt;nav&gt;
+            &lt;!-- Navigation content, typically an unordered list of links --&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>Example Usage</h2>
+            <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Navigation Example&lt;/title&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+        
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        
+            &lt;!-- Other content of the webpage goes here --&gt;
+        
+        &lt;/body&gt;
+        
+        &lt;/html&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>Attributes</h2>
+            <pre>
+        &lt;nav role="navigation"&gt;
+            &lt;!-- Navigation content --&gt;
+        &lt;/nav&gt;
+            </pre>
+        </section>
+        
+        <section>
+            <h2>Best Practices</h2>
+            <ul>
+                &lt;li&gt;<strong>Semantic Use:</strong> Place only navigation-related content within the
+                <code>&lt;nav&gt;</code> element.&lt;/li&gt;
+                &lt;li&gt;<strong>Clear Structure:</strong> Use nested elements like <code>&lt;ul&gt;</code> and
+                <code>&lt;li&gt;</code> to create a clear structure for navigation.&lt;/li&gt;
+                &lt;li&gt;<strong>Accessible Text:</strong> Ensure that link text is descriptive and provides clear
+                indications of the target destinations.&lt;/li&gt;
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Accessibility Considerations</h2>
+            <ul>
+                &lt;li&gt;<strong>Descriptive Text:</strong> Use descriptive and meaningful text for navigation links.&lt;/li&gt;
+                &lt;li&gt;<strong>Keyboard Navigation:</strong> Ensure that navigation links are easily accessible and
+                navigable using a keyboard.&lt;/li&gt;
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Summary</h2>
+            <p>
+                The <code>&lt;nav&gt;</code> element is a fundamental part of creating accessible and well-structured web
+                pages. It allows web developers to define and organize navigation menus, making it easier for users to
+                navigate through different sections of a website.
+            </p>
+        </section>
+        
+
+</div>
+</div>
+<!-- intro end -->
+
+<!-- partial -->
+<script src="../../assets/js/courses.js"></script>
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
