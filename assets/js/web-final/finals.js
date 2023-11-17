@@ -24,7 +24,7 @@ document.querySelectorAll('div a').forEach(anchor => {
 
 // class Validator {
 //     constructor() {
-//         this.textArea = document.getElementById("final1");
+//         this.textArea = document.getElementById("textarea-1");
 //         this.result1 = document.getElementById("result1");
 //         this.result2 = document.getElementById("result2");
 //         this.result3 = document.getElementById("result3");
@@ -52,7 +52,7 @@ document.querySelectorAll('div a').forEach(anchor => {
 
 // class Validator {
 //     constructor() {
-//         this.textArea = document.getElementById("final1");
+//         this.textArea = document.getElementById("textarea-1");
 //         this.result1 = document.getElementById("result1");
 //         this.result2 = document.getElementById("result2");
 //         this.result3 = document.getElementById("result3");
@@ -96,7 +96,7 @@ document.querySelectorAll('div a').forEach(anchor => {
 
 class Validator {
     constructor() {
-        this.textArea = document.getElementById("final1");
+        this.textArea = document.getElementById("textarea-1");
         this.result1 = document.getElementById("result1");
         this.result2 = document.getElementById("result2");
         this.result3 = document.getElementById("result3");
