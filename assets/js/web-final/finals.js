@@ -95,6 +95,7 @@ document.querySelectorAll('div a').forEach(anchor => {
 // }
 
 class Validator {
+    
     constructor() {
         this.textArea = document.getElementById("textarea-1");
         this.result1 = document.getElementById("result1");
@@ -143,3 +144,28 @@ const storedResult = localStorage.getItem('validationResult');
 if (storedResult) {
     validator.result1.innerHTML = storedResult;
 }
+
+
+function final_1() {
+    var textArea = document.getElementById('textarea-1');
+    var iframe = document.getElementById('iframe-1');
+
+    textArea.addEventListener('input', function() {
+    iframe.contentDocument.body.innerHTML = textArea.value;
+    });
+    
+    function answer() {
+    var textArea = document.getElementById('textArea').value;
+    var data = `<div class="sample"></div>`;
+
+    // Remove extra spaces and line breaks from data1 and textArea
+    data = data.replace(/\s/g, '');
+    textArea = textArea.replace(/\s/g, '');
+
+    if (textArea === data) {
+        document.getElementById("show").innerHTML = "Correct";
+    } else {
+        document.getElementById("show").innerHTML = "Wrong";
+    }
+    };
+}; final_1();
