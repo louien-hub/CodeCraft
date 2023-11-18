@@ -57,7 +57,8 @@
                 <img class="img-cert" src="assets/img/cert.png" alt="">
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="home-btn btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">View Certificates</button>
+                <button class="home-btn btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#certificate">View Certificates</button>
+                <button class="home-btn btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#premium">Premium</button>
             </div>
         </div>
         </section>
@@ -128,7 +129,7 @@
 <!-- all-pages -->
 
 <!-- modals -->
-  <div class="modal fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade text-center" id="certificate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -137,6 +138,76 @@
         </div>
         <div class="modal-body">
           Finish the Modules and the Activities first
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modals end -->
+
+<!-- modals -->
+<div class="modal fade text-center" id="premium" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Upgrade to Premium</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <main>
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Free</h4>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₱0<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>1 Certification</li>
+                          <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Current Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₱200</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                          <li>All Certification</li>
+                          <li>Premium Modules</li>
+                          <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                      <div class="card-header py-3 text-bg-warning border-warning">
+                        <h4 class="my-0 fw-normal">Enterprise</h4>
+                      </div>
+                      <div class="card-body">
+                        <h1 class="card-title pricing-card-title">₱300</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All Certification</li>
+                            <li>Premium Modules</li>
+                            <li>Help center access</li>
+                            <li>Premium Emmets/Autocompletion</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-warning">Get started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </main>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
