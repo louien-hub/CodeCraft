@@ -192,25 +192,10 @@ class Validator {
             textAreaValue.includes('</ul') &&
             textAreaValue.includes('</div>');
             
-        const act4 = textAreaValue.includes('<div id="about">') &&
-            textAreaValue.includes('<h1>') &&
-            textAreaValue.includes('About') &&
-            textAreaValue.includes('</h1>') &&
-            textAreaValue.includes('<ul>') &&
-            textAreaValue.includes('<h3>') &&
-            textAreaValue.includes('List') &&
-            textAreaValue.includes('</h3>') &&
-            textAreaValue.includes('<li>') &&
-            textAreaValue.includes('Hello World') &&
-            textAreaValue.includes('</li>') &&
-            textAreaValue.includes('<li>') &&
-            textAreaValue.includes('Hello World') &&
-            textAreaValue.includes('</li>') &&
-            textAreaValue.includes('<li>') &&
-            textAreaValue.includes('Hello World') &&
-            textAreaValue.includes('</li>') &&
-            textAreaValue.includes('</ul') &&
-            textAreaValue.includes('</div>');
+        const act4 = textAreaValue.includes('<footer>') &&
+            textAreaValue.includes('<hr>') &&
+            textAreaValue.includes('CodeCraft 2023') &&
+            textAreaValue.includes('</footer>')
 
         let validationResult1
         let validationResult2;
