@@ -185,8 +185,8 @@ class Validator {
         }
 
         // Save the validation result in local storage
-        localStorage.setItem('validationResult', validationResult1);
-        localStorage.setItem('validationResult', validationResult2);
+        localStorage.setItem('validationResult_1', validationResult1);
+        localStorage.setItem('validationResult_2', validationResult2);
 
         // Save the textarea value in local storage
         localStorage.setItem('textAreaValue', this.textArea.value);
@@ -204,14 +204,16 @@ document.getElementById("btnFinal-1").addEventListener("click", () => {
 });
 
 // Retrieve the validation result from local storage
-const storedResult = localStorage.getItem('validationResult');
-if (storedResult) {
-    validator.result1.innerHTML = storedResult;
+const storedResult_1 = localStorage.getItem('validationResult_1');
+const storedResult_2 = localStorage.getItem('validationResult_2');
+if (storedResult_1) {
+    validator.result1.innerHTML = storedResult_1;
 }
 
-if (storedResult) {
-    validator.result2.innerHTML = storedResult;
+if (storedResult_2) {
+    validator.result2.innerHTML = storedResult_2;
 }
+
 
 
 function final_1() {
