@@ -15,9 +15,20 @@ const db = firebase.database();
 function submitFeedback() {
     const emailInput = document.getElementById('email');
     const feedbackInput = document.getElementById('feedback');
+    const submitButton = document.getElementById('submitButton');
 
-    const email = emailInput.value;
-    const feedbackText = feedbackInput.value;
+    const email = emailInput.value.trim();
+    const feedbackText = feedbackInput.value.trim();
+
+    // Check if both email and feedback are not empty
+    if (email === '' && feedbackText === '') {
+        console.log('Both email and feedback are empty. Feedback not submitted.');
+        return;
+    }
+
+    // Disable the button and change its text to "Sending"
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
 
     const feedbackId = generateUniqueId();
 
@@ -30,11 +41,20 @@ function submitFeedback() {
         // Clear the form
         emailInput.value = '';
         feedbackInput.value = '';
+
+        // Re-enable the button and change its text back to "Submit"
+        submitButton.disabled = false;
+        submitButton.textContent = 'Submit';
     })
     .catch((error) => {
         console.error('Error submitting feedback: ', error);
+
+        // Re-enable the button and change its text back to "Submit"
+        submitButton.disabled = false;
+        submitButton.textContent = 'Submit';
     });
 }
+
 
 function generateUniqueId() {
     return '_' + Math.random().toString(36).substr(2, 9);
