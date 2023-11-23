@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../../assets/css/courses.css">
-    <link rel="stylesheet" href="../../assets/css/web-final/finals.css">
-    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/web-final/finals.css">
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -32,6 +31,7 @@
         <a href="#final-3" class="list-group-item list-group-item-action">Final Exam III</a>
         <a href="#final-4" class="list-group-item list-group-item-action">Final Exam IV</a>
         <a href="#final-5" class="list-group-item list-group-item-action">Final Exam V</a>
+        <a href="#certificate" class="list-group-item list-group-item-action">View Certificate</a>
     </div>
 </div>
 <!-- final -->
@@ -88,10 +88,40 @@
         </footer>
     </main>
 </div>
+
+<div class="certificate" id="certificate" style="display: none;">
+
+    <style>
+    #img {
+        max-width: 100%;
+        height: auto;
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    </style>
+    <div class="container">
+        <div class="cert" style="text-align: center"><img id="img" /></div>
+        <div class="btn-container">
+            <button class="btn btn-primary" id="btn" disabled="true">Loading Certificate...</button>
+        </div>
+        <canvas id="certificate-canvas" style="display: none;" width="1200" height="800"></canvas>
+    </div>
+    
+</div>
 <!-- all final -->
 
 <!-- partial -->
-<script src="../../assets/js/web-final/finals.js"></script>
-<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/js/web-final/finals.js"></script>
+<script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+<script src="cert.js"></script>
+
+<script>
+
+
+
+</script>
 </body>
 </html>
